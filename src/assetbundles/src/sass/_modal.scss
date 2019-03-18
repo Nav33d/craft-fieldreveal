@@ -1,0 +1,32 @@
+/*
+|
+| Name: Modal
+| Description: Style for field reveal modal
+| State: Green
+|
+*/
+
+.fieldrevealmodal .body {
+  position: relative;
+  height: 100%;
+  padding: 0;
+}
+
+.fieldrevealmodal .content {
+  overflow: auto;
+  height: calc(100% - 60px);
+  padding: 24px;
+}
+
+.fieldrevealmodal .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fieldrevealmodal .spinner.big {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}

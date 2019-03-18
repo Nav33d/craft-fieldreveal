@@ -1,0 +1,32 @@
+{
+  "name": "fieldreveal",
+  "version": "1.0.0",
+  "description": "View where your custom fields are being used.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.14",
+    "resolve-url-loader": "2.3.1",
+    "sass": "^1.17.2",
+    "sass-loader": "7.*",
+    "tailwindcss": "^0.7.4",
+    "vue": "^2.6.8",
+    "vue-confetti": "^1.1.3",
+    "vue-moment": "^4.0.0",
+    "vue-sweetalert2": "^1.6.4",
+    "vue-template-compiler": "^2.6.8",
+    "vuex": "^3.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+{% extends "_layouts/cp" %}
+
+{% block content %}
+  <div id="fieldreveal-app">
+    <v-confetti></v-confetti>
+    <div class="text-center mt-4">
+      <img src="{{ baseAssetsUrl ~ '/img/fieldreveal-icon.svg' }}" width="25%" height="auto"/>
+      <h2 class="mt-4 mb-4">Welcome to Field Reveal</h2>
+      <p class="mb-4">
+        View where your custom fields are being used.
+      </p>
+      <p class="mb-4">
+        Hope you find this plugin useful! For more information, please <a href="https://github.com/Nav33d/craft-fieldreveal" target="_blank" rel="noopener">read the documentation</a>.
+      </p>
+      <p>
+        <a class="btn" href="{{ cpUrl('fieldreveal') }}">Field Reveal</a>
+      </p>
+    </div>
+  </div>
+{% endblock %}
