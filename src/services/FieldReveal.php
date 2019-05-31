@@ -49,7 +49,7 @@ class FieldReveal extends Component
             'groupName' => 'fieldgroups.name',
         ])
         ->from('{{%fieldgroups}} fieldgroups')
-        ->innerJoin(['{{%fields}} fields'], 'fieldgroups.id = fields.groupId');
+        ->innerJoin(['{{%fields}} fields'], '[[fieldgroups.id]] = [[fields.groupId]]');
 
         if ( $fieldName )
         {
@@ -148,7 +148,7 @@ class FieldReveal extends Component
             ])
             ->from(['{{%fieldlayoutfields}} fieldlayoutfields'])
             ->where(['fieldId' => $fieldId])
-            ->innerJoin(['{{%fieldlayouts}} fieldlayouts'], 'fieldlayoutfields.layoutId = fieldlayouts.id')
+            ->innerJoin(['{{%fieldlayouts}} fieldlayouts'], '[[fieldlayoutfields.layoutId]] = [[fieldlayouts.id]]')
             ->all();
             
         $data = [];
